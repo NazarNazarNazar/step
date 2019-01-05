@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- selected -->
+    <item android:state_selected="true">
+        <shape>
+            <gradient android:angle="270"
+                android:endColor="@color/colorWalk"
+                android:startColor="@color/colorAerobic" />
+            <corners android:radius="8dp" />
+            <stroke android:width="4dp" android:color="@android:color/transparent" />
+        </shape>
+    </item>
+    <!-- pressed -->
+    <item android:state_pressed="true">
+        <shape>
+            <gradient android:angle="270"
+                android:endColor="@color/colorRun"
+                android:startColor="@color/colorAerobic" />
+            <corners android:radius="8dp" />
+            <stroke android:width="4dp" android:color="@android:color/transparent" />
+        </shape>
+    </item>
+    <!-- default state -->
+    <item>
+        <shape>
+            <gradient android:angle="270"
+                android:endColor="@color/colorWalk"
+                android:startColor="@color/colorAerobic" />
+            <stroke android:width="4dp" android:color="@android:color/transparent" />
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+</selector>
